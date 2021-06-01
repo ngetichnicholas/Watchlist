@@ -26,3 +26,18 @@ h3 {
 .col-xs-6, .col-sm-6, .col-lg-6 {
   height: 80vh;
 }
+.navbar {
+  background-color: #032541;
+  height: 8vh;
+  padding-left: 20%;
+  padding-right: 20%;
+  border-radius: unset;
+}
+.main {
+  color: #5CC4BA !important;
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+.shrinkable {
+  color: white !important;
+}
