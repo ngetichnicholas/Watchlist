@@ -4,6 +4,9 @@ ul {
   display: flex;
   flex-direction: column;
 }
+li a {
+  font-size: 20px;
+}
 .search-result {
   display: unset;
   flex-direction: unset;
