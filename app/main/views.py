@@ -64,9 +64,9 @@ def new_review(id):
     title = f'{movie.title} review'
     return render_template('new_review.html',title = title, review_form=form, movie=movie)
 
-@main.route('/movies')
+@main.route('/films')
 def movie():
-    return render_template('movie.html')
+    return render_template('films.html')
 
 @main.route('/shows')
 def movie():
