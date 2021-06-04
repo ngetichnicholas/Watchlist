@@ -75,6 +75,7 @@ def shows():
 @main.route('/people')
 def people():
     return render_template('people.html')
+    
 @main.route('/more')
 def more():
     return render_template('more.html')
