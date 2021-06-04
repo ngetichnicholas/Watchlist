@@ -31,6 +31,34 @@ img {
     margin-right: 15%;
   }
 }
+@media (max-width: 1000px) {
+  .header{
+    height: auto !important;
+  }
+  .btn {
+    background-color: #1AD0B1;
+    height: 100%;
+    margin-left: 1.5rem;
+    margin-top: 1.5rem;
+  }
+  #navbarNavAltMarkup {
+    display: none;
+  }
+  .input {
+    height: 100%;
+    padding-right: unset;
+    margin-bottom: 1.5rem;
+    margin-right: 1.5rem;
+  
+  }
+  .submit {
+    padding-left: unset;
+  }
+  input {
+    margin: 2rem ;
+    border-radius: 8px !important;
+  }
+}
 .col-xs-12, .col-sm-4, .col-md-2,.col-lg-2 {
   width: fit-content;
   text-align: center;

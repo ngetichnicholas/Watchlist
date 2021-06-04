@@ -2,9 +2,8 @@ from flask import render_template,request,redirect,url_for
 from . import main
 from ..requests import get_movies,get_movie,search_movie
 from .forms import ReviewForm
-from ..models import reviews
+from ..models import Review
 
-Review = reviews.Review
 
 @main.route('/')
 def index():
@@ -34,9 +33,9 @@ def movie(id):
     '''
     movie = get_movie(id)
     title = f'{movie.title}'
-    reviews = Review.get_reviews(movie.id)
+    Review = Review.get_reviews(movie.id)
 
-    return render_template('movie.html',title = title,movie = movie,reviews = reviews)
+    return render_template('movie.html',title = title,movie = movie,Review = Review)
 
 @main.route('/search/<movie_name>')
 def search(movie_name):
