@@ -3,7 +3,7 @@
 Nicholas Ngetich
 ## Description
 This is a flask application consuming API to render list of movies and also search for movies.
-![alt text](https://github.com/ngetichnicholas/Watchlist/blob/master/movie-search.png)
+![alt text](https://github.com/ngetichnicholas/Watchlist/blob/main/movie-search.png)
 ### Prerequisites
 You need to have git installed
 You can install it with the following command in your terminal
