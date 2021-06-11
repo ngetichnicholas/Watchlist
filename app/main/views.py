@@ -8,14 +8,12 @@ from .. import db,photos
 from .forms import ReviewForm,UpdateProfile
 import markdown2  
 
-
 @main.route('/')
 def index():
 
     '''
     View root page function that returns the index page and its data
     '''
-
     # Getting popular movie
     popular_movies = get_movies('popular')
     upcoming_movie = get_movies('upcoming')
@@ -32,7 +30,6 @@ def index():
         
 @main.route('/movie/<int:id>')
 def movie(id):
-
     '''
     View movie page function that returns the movie details page and its data
     '''
@@ -61,7 +58,7 @@ def new_review(id):
     if form.validate_on_submit():
         title = form.title.data
         review = form.review.data
-
+        
         # Updated review instance
         new_review = Review(movie_id=movie.id,movie_title=title,image_path=movie.poster,movie_review=review,user=current_user)
 
